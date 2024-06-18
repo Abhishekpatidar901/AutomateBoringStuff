@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'anymail',
     'image_compression',
-    'stockanalysis',
+   'quiz_generator',
     'blog_generator',
 ]
 

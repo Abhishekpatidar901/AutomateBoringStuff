@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base1.html' %}
 
 {% block content %}
 
@@ -15,8 +15,8 @@
 
         <!-- Introduction section -->
         <div class="text-center">
-            <h2 class="text-2xl font-semibold mb-4">Welcome to the AI Blog Generator</h2>
-            <p class="text-gray-700">
+            <h2 class="text-2xl font-semibold mb-4" style=" border-radius:8px ; font-weight: 700; font-family: var(--bs-font-sans-serif); background-color:#fff3cd; color: #664d03; padding: 4px; ">Welcome to the AI Blog Generator</h2>
+            <p class="text-gray-700" style="color: #664d03;">
                 Generate high-quality blog articles from YouTube videos using artificial intelligence.
                 Simply enter the link to the YouTube video below and let the AI create the content for you!
             </p>
@@ -26,10 +26,10 @@
 
         <!-- Youtube section -->
         <div>
-            <h2 class="text-xl mb-4 font-semibold">Enter Youtube Video Link</h2>
+            <h2 class="text-xl mb-4 font-semibold" style=" border-radius:8px ; font-weight: 400; font-family: var(--bs-font-sans-serif); background-color:#fff3cd; color: #664d03; padding: 4px; ">Enter Youtube Video Link</h2>
             <div class="flex space-x-4 mb-4">
                 <input id="youtubeLink" type="url" placeholder="Paste Youtube Link..." class="flex-grow p-2 border border-blue-400 rounded-l-md">
-                <button id="generateBlogButton" class=" bg-blue text-black px-4 py-2 rounded-r-md hover:bg-blue-700 transition-colors">Generate</button>
+                <button id="generateBlogButton" class=" bg-blue text-black px-4 py-2 rounded-r-md hover:bg-blue-700 transition-colors" style="color: #664d03; border: 1px solid black;">Generate</button>
             </div>
         </div>
 
@@ -40,7 +40,7 @@
 
         <!-- Generated Blog Display Section -->
         <section class="mt-20 flex-grow">
-            <h2 class="text-xl mb-4 font-semibold">Generated Blog Article</h2>
+            <h2 class="text-xl mb-4 font-semibold" style=" border-radius:8px ; font-weight: 400; font-family: var(--bs-font-sans-serif); background-color:#fff3cd; color: #664d03; padding: 4px; ">Generated Blog Article</h2>
             <div id="blogContent" class="mt-2 text-gray-700 space-y-4">
                 
             </div>

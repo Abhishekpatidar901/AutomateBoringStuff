@@ -72,11 +72,16 @@ def download_audio(link):
 
 def get_transcription(link):
     audio_file = download_audio(link)
-    aai.settings.api_key = config('AI_KEY')
-
+    aai.settings.api_key = '833a39b001284fc7ae93853885fdda4e'
+    print(audio_file)
     transcriber = aai.Transcriber()
     transcript = transcriber.transcribe(audio_file)
 
+    if transcript.error:
+        print(transcript.error)
+    else:
+        print("\nNano tier output:")
+        print(transcript.text)
     return transcript.text
 
 # def generate_blog_from_transcription(transcription):
@@ -110,6 +115,6 @@ def generate_blog_from_transcription(transcription):
         ],
         max_tokens=3500
     )
-     
+    print(response) 
     generated_content = response['choices'][0]['message']['content']
     return generated_content

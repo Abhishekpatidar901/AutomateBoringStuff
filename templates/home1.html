@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base1.html' %}
 
 
 {% block content %}
@@ -76,8 +76,10 @@
             </a>
         </div>
 
-        <!-- AI Blog Generator -->
-        <div class="col-md-4">
+
+    </div>
+    <div class="row pt-5">
+        <div class="col-md-6">
             <a href="{% url 'bloggen' %}" class="text-decoration-none text-dark">
                 <div class="card alert-warning shadow">
                     <div class="card-header">
@@ -89,21 +91,20 @@
                 </div>
             </a>
         </div>
-    </div>
-    <!-- <div class="row pt-5">
-        <div class="col-md-4">
-            <a href="{% url 'stocks' %}" class="text-decoration-none text-dark">
-                <div class="card alert-warning shadow">
+
+        <div class="col-md-6">
+            <a href="{% url 'home' %}" class="text-decoration-none text-dark">
+                <div class="card alert-danger shadow">
                     <div class="card-header">
-                    <h4>Stock Market Analysis</h4>
+                    <h4>Quiz Generator</h4>
                     </div>
                     <div class="card-body">
-                    <p class="card-text">Stock Market Analysis - Web Scraping.</p>
+                    <p class="card-text">Generate Quiz using AI.</p>
                     </div>
                 </div>
             </a>
         </div>
-    </div> -->
+    </div>
     
     {% else %}
 

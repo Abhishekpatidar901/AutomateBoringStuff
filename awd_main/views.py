@@ -6,8 +6,8 @@ from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import auth
 
-def home(request):
-    return render(request,'home.html')
+def home1(request):
+    return render(request,'home1.html')
 
 def celery_test(request):
     celery_test_task.delay()
@@ -42,7 +42,7 @@ def login(request):
 
             if user is not None:
                 auth.login(request, user)
-                return redirect('home')
+                return redirect('home1')
         else:
             messages.error(request, 'Invalid credentials')
             return redirect('login')
@@ -54,4 +54,4 @@ def login(request):
 
 def logout(request):
     auth.logout(request)
-    return redirect('home')
+    return redirect('home1')
