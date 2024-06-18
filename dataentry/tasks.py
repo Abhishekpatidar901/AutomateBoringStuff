@@ -17,15 +17,15 @@ def celery_test_task():
     return 'Email sent successfully.'
 
 @app.task
-def import_data_task(file_path, model_name):
+def import_data_task(file_path, model_name,toemail):
     try:
-        call_command('importdata', file_path, model_name)
+        call_command('importdata', file_path, model_name,toemail)
     except Exception as e:
         raise e
     # notify the user by email
     mail_subject = 'Import Data Completed'
     message = 'Your data import has been successful'
-    to_email = settings.DEFAULT_TO_EMAIL
+    to_email = toemail
     send_email_notification(mail_subject, message, [to_email])
     return 'Data imported successfully.'
 
