@@ -13,6 +13,7 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument('file_path', type=str, help='Path to the CSV file')
         parser.add_argument('model_name', type=str, help='Name of the model')
+        parser.add_argument('email', type=str, help='Email to export')
 
     def handle(self, *args, **kwargs):
         # logic goes here

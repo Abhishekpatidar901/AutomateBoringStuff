@@ -31,9 +31,9 @@ def import_data_task(file_path, model_name):
 
 
 @app.task
-def export_data_task(model_name):
+def export_data_task(model_name,toemail):
     try:
-        call_command('exportdata', model_name)
+        call_command('exportdata', model_name, toemail)
     except Exception as e:
         raise e
     
@@ -42,6 +42,6 @@ def export_data_task(model_name):
     # Send email with the attachment
     mail_subject = 'Export Data Successful'
     message = 'Export data successful. Please find the attachment'
-    to_email = settings.DEFAULT_TO_EMAIL
+    to_email = toemail
     send_email_notification(mail_subject, message, [to_email], attachment=file_path)
     return 'Export Data task executed successfully.'

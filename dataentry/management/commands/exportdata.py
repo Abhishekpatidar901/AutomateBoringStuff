@@ -13,6 +13,7 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument('model_name', type=str, help='Model name')
+        parser.add_argument('email', type=str, help='Email to export')
 
     def handle(self, *args, **kwargs):
         model_name = kwargs['model_name'].capitalize()
