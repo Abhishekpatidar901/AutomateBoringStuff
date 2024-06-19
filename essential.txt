@@ -1,0 +1,7 @@
+celery -A awd_main worker --loglevel=info --pool=solo
+
+
+PS C:\Program Files\Redis> redis-server.exe
+
+
+
