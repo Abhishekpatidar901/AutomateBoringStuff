@@ -33,4 +33,5 @@ urlpatterns = [
     path('image-compression/', include('image_compression.urls')),
     path('quiz-generator/',include('quiz_generator.urls')),
     path('blog-generator/', include('blog_generator.urls')),
+    path('pdfapp/', include('pdfapp.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

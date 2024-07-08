@@ -1,6 +1,5 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect, get_object_or_404
-
 from .tasks import send_email_task
 from .forms import EmailForm
 from django.contrib import messages

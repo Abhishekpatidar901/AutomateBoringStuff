@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'image_compression',
    'quiz_generator',
     'blog_generator',
+    'pdfapp'
 ]
 
 MIDDLEWARE = [

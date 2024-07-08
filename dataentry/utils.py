@@ -82,6 +82,7 @@ def send_email_notification(mail_subject, message, to_email, attachment=None, em
                 print('urls=>', urls)
 
                 # If there are links or urls in the email body, inject our click tracking url to that original link
+                
                 if urls:
                     for url in urls:
                         # make the final tracking url
@@ -110,6 +111,7 @@ def send_email_notification(mail_subject, message, to_email, attachment=None, em
         raise e
     
 
+
 def generate_csv_file(model_name):
     # generate the timestamp of current date and time
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
@@ -119,3 +121,4 @@ def generate_csv_file(model_name):
     file_name = f'exported_{model_name}_data_{timestamp}.csv'
     file_path = os.path.join(settings.MEDIA_ROOT, export_dir, file_name)
     return file_path
+
