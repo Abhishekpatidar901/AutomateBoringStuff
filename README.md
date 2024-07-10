@@ -1,3 +1,7 @@
+![image](https://github.com/Abhishekpatidar901/TaskForger/assets/46681150/37ffe08b-02a8-438e-ad5b-a1ee8db04e80)
+
+
+
 # TaskForge - Unified AI and Automation Solutions with Django 
 
 This automation platform is developed using Django and features several advanced functionalities including CSV data import/export, bulk email sending with tracking, image compression using PIL, a large language model (LLM)-powered PDF reader, and an AI-based quiz generator using OpenAI.
