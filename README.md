@@ -1,3 +1,5 @@
+# JustSettle- MERN Stack Group Expense Splitting Application
+
 This automation platform is developed using Django and features several advanced functionalities including CSV data import/export, bulk email sending with tracking, image compression using PIL, a large language model (LLM)-powered PDF reader, and an AI-based quiz generator using OpenAI.
 
 ## Features
